@@ -121,24 +121,6 @@ input {
     text-decoration: underline;
 }
 
-.social-login {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-}
-
-.google-login,
-.github-login {
-    background: white;
-    color: #333;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    margin-top: 5px;
-}
-
 footer {
     margin-top: 20px;
     font-size: 12px;
@@ -226,26 +208,6 @@ form input {
 
 .login-link a:hover {
     text-decoration: underline;
-}
-
-/* Social Sign-Up Buttons */
-.social-signup {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-}
-
-.google-signup,
-.github-signup {
-    background: white;
-    color: #333;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    margin-top: 5px;
-    width: 100%;
 }
 
 /* Style for 404 Error Box */
