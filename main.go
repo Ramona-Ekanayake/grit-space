@@ -30,7 +30,7 @@ func main() {
 			path = "./web/templates/index.html"
 		}
 		if _, err := os.Stat(path); os.IsNotExist(err) {
-			http.ServeFile(w, r, "./web/templates/404.html")
+			notFoundHandler(w, r)
 			return
 		}
 		http.ServeFile(w, r, path)
@@ -38,4 +38,9 @@ func main() {
 
 	fmt.Println("Server started on http://localhost:8080")
 	http.ListenAndServe(":8080", nil)
+}
+
+func notFoundHandler(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(http.StatusNotFound)
+	http.ServeFile(w, r, "./web/templates/404.html")
 }

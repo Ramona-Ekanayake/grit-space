@@ -48,6 +48,13 @@ func InitDB() {
 		like_type TEXT CHECK( like_type IN ('like', 'dislike') ),
 		FOREIGN KEY(user_id) REFERENCES users(id),
 		FOREIGN KEY(post_id) REFERENCES posts(id)
+	);
+	CREATE TABLE IF NOT EXISTS sessions (
+		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		user_id INTEGER,
+		session_token TEXT UNIQUE NOT NULL,
+		expires_at DATETIME NOT NULL,
+		FOREIGN KEY(user_id) REFERENCES users(id)
 	);`
 	
 	_, err = DB.Exec(createTables)

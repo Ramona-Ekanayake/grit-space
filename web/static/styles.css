@@ -247,3 +247,38 @@ form input {
     margin-top: 5px;
     width: 100%;
 }
+
+/* Style for 404 Error Box */
+.error-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.error-box h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.error-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #D1D1E9;
+}
+
+.home-btn {
+    background: #5E5CE6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.home-btn:hover {
+    background: #4B4ACF;
+}
