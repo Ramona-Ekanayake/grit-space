@@ -244,3 +244,20 @@ form input {
 .home-btn:hover {
     background: #4B4ACF;
 }
+
+.hover-effect {
+    cursor: pointer;
+}
+
+.hover-effect:hover {
+    text-decoration: underline;
+}
+
+.no-link-style {
+    color: white;
+    text-decoration: none;
+}
+
+.no-link-style:hover {
+    text-decoration: underline;
+}
