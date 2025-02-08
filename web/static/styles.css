@@ -1,0 +1,236 @@
+/* Importing a modern font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0E1133;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.signup-btn {
+    background: #5E5CE6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-btn:hover {
+    background: #4B4ACF;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.signin-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.signin-box h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.signin-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #D1D1E9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #5E5CE6;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.signin-btn {
+    background: #5E5CE6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signin-btn:hover {
+    background: #4B4ACF;
+}
+
+.forgot-password {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #A1A1E6;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.google-login,
+.github-login {
+    background: white;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin-top: 5px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #D1D1E9;
+}
+
+
+/* Style for Sign-Up Box */
+.signup-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+.signup-box h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.signup-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #D1D1E9;
+}
+
+/* Input Fields */
+form label {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #5E5CE6;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    background: #0E1133;
+    color: white;
+}
+
+/* Submit Button (same as Sign-In page) */
+.signup-submit-btn {
+    background: #5E5CE6;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.signup-submit-btn:hover {
+    background: #4B4ACF;
+}
+
+/* Link to Sign-In */
+.login-link {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #A1A1E6;
+}
+
+.login-link a {
+    color: #5E5CE6;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Social Sign-Up Buttons */
+.social-signup {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.google-signup,
+.github-signup {
+    background: white;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin-top: 5px;
+    width: 100%;
+}
